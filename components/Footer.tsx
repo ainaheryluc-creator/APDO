@@ -29,7 +29,7 @@ export default function Footer() {
               <img src="/logo.jpg" alt="Logo APDO" className="w-12 h-12 object-contain bg-white rounded-full p-0.5" onError={(e) => {
                 (e.target as HTMLImageElement).src = '/logo.png';
               }} />
-              <h3 className="text-2xl font-bold tracking-wider text-white">APDO</h3>
+              <h3 className="text-2xl font-bold tracking-wider text-white">APDO23</h3>
             </div>
             <p className="text-sm text-blue-100/80 leading-relaxed">
               Association Pour la Protection Des Droits Des Orphelins. Nous travaillons pour un meilleur avenir des enfants.

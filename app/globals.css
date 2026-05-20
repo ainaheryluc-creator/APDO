@@ -1,0 +1,106 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@layer base {
+  body {
+    background-color: #F4F7FA;
+    color: #1F2937;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #09335F; /* Bleu Nuit du logo */
+  }
+  
+  a {
+    color: #09335F;
+    transition: color 0.2s;
+  }
+  
+  a:hover {
+    color: #DF6C63; /* Corail au survol */
+  }
+}
+
+@layer components {
+  .btn-primary {
+    background-color: #09335F;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #104A8A; /* Bleu un peu plus clair */
+  }
+  
+  .btn-secondary {
+    background-color: #DF6C63; /* Rouge Corail du logo */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #E25A4F;
+  }
+  
+  .btn-outline {
+    border: 2px solid #09335F;
+    color: #09335F;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+  
+  .btn-outline:hover {
+    background-color: #09335F;
+    color: white;
+  }
+  
+  .card-apdo {
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(9, 51, 95, 0.1), 0 2px 4px -1px rgba(9, 51, 95, 0.06);
+    padding: 1.5rem;
+    transition: all 0.3s;
+    border-top: 4px solid #DF6C63; /* Accent corail */
+  }
+  
+  .card-apdo:hover {
+    box-shadow: 0 10px 15px -3px rgba(9, 51, 95, 0.1), 0 4px 6px -2px rgba(9, 51, 95, 0.05);
+    transform: translateY(-2px);
+  }
+  
+  .section-title {
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: #09335F;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background-color: #EAA937; /* Jaune / Doré du logo */
+    border-radius: 2px;
+  }
+  
+  @media (min-width: 768px) {
+    .section-title {
+      font-size: 2.25rem;
+    }
+  }
+}
